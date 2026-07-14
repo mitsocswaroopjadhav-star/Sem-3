@@ -44,4 +44,9 @@ library.register(patron1)
 library.borrow(patron1, book1)
 library.return_book(patron1, book1)
 
+# Python Programming was added to the library.
+# Ronaldo is registered.
+# Python Programming it is issued by Ronaldo.
+# Python Programming is returned by Ronaldo.
+
 
