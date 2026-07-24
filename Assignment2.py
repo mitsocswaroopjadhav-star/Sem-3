@@ -36,3 +36,14 @@ class Report:
 
 student1 = Report("Rahul", 101, 85)
 student1.display_reports()
+
+
+
+#========================================
+#Student report
+#College : XYZ COLLEGE
+#Name : Rahul
+#Roll no :  101
+#Grade :  85
+#PASS
+#========================================
