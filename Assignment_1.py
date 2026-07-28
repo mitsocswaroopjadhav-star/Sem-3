@@ -1,0 +1,53 @@
+class Book:
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print("The book is", self.name)
+
+
+class Patron:
+    def __init__(self, name, book):
+        self.name = name
+        self.book = book
+
+    def show(self):
+        print(f"The {self.book.name} is issued by {self.name}")
+
+
+class Library:
+    def add_book(self, book):
+        self.book = book
+        print("The book added was", self.book.name)
+
+    def register(self, patron):
+        self.patron = patron
+        print("The student registered is", self.patron.name)
+
+    def borrow(self, patron, book):
+        self.book = book
+        self.patron = patron
+        print(f"The book borrowed is {self.book.name} and it is borrowed by {self.patron.name}")
+
+    def return_book(self, patron, book):
+        self.book = book
+        self.patron = patron
+        print(f"The book returned is {self.book.name} and it is returned by {self.patron.name}")
+
+
+book1 = Book("Python")
+patron1 = Patron("Ronaldo", book1)
+library = Library()
+
+library.add_book(book1)
+library.register(patron1)
+library.borrow(patron1, book1)
+library.return_book(patron1, book1)
+
+
+#Output
+# Python Programming was added to the library.
+# Ronaldo is registered.
+# Python Programming it is issued by Ronaldo.
+# Python Programming is returned by Ronaldo.
+
