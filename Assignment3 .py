@@ -46,3 +46,13 @@ else:
     exit()
 
 processor.process(amount)
+
+
+
+# #Output
+# 1. UPI
+# 2. Card
+# 3. Net Banking
+# Enter choice: 1
+# Enter amount: 1000
+# Paid 1000 using UPI
