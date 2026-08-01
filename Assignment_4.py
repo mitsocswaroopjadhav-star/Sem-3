@@ -39,4 +39,6 @@ answer2 = fib_table(value)
 print("\nResult using Memoization :", answer1)
 print("Result using Tabulation  :", answer2)
 
+##Enter Fibonacci position: 14 Result using Memoization : 377 Result using Tabulation : 377
+
 
